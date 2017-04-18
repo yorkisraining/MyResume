@@ -25,6 +25,7 @@ p {
     line-height:30px;
     font-size:16px;
     padding:10px 0px 10px 0px;
+    white-space: pre-line;
 }
 .copyrights{
 	text-indent:-9999px;
@@ -37,17 +38,18 @@ p {
 font-weight: 900;
 color:rgb(255, 15, 101);
 }
- .color-strip {
-     margin:20px 0px 30px 0px;
-     max-width:230px;
-height: 2px;
-border-top: 0;
-background: #c4e17f;
-border-radius: 5px;
-background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+
+.color-strip {
+    margin:20px 0px 30px 0px;
+    max-width:230px;
+	height: 2px;
+	border-top: 0;
+	background: #c4e17f;
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
 }
 
 /* =============================================================
@@ -172,21 +174,8 @@ cursor: pointer;
       background-color:rgb(255, 15, 101);
 }
 
-    /* =============================================================
-  ABOUT SECTION STYLES
- ============================================================ */
-    
-   
-#about-sec .social-icon {
-    padding:10px 0px 30px 0px;
-}
-    #about-sec .social-icon a > img {
-        padding:5px;
-    }
-
-
 /* =============================================================
-  SKILL SECTION STYLES ( easy-pie-chart css)
+  SKILL SECTION STYLES 
  ============================================================ */
     #skill-sec h4 {
 font-weight: 600;
@@ -206,38 +195,19 @@ background-attachment: fixed;
         background:url(../img/overlays/15.png);
 min-height: 450px;
     }
-.chart {
-  position: relative;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.percent {
-  display: inline-block;
-  line-height: 150px;
-  z-index: 2;
-  font-size: 2em;
-}
-.percent:after {
-  content: '%';
-  margin-left: 0.1em;
-  font-size: 1em;
-}
+
     /* =============================================================
   DOWNLOAD SECTION STYLES
  ============================================================ */
+#resume-sec p {
+	white-space: normal;
+}
+
 .board{
    width: 85%;
 margin: 0px auto;
 }
+
 .board .nav-tabs {
     position: relative;
     margin: 40px auto;
@@ -604,4 +574,14 @@ bottom: 10px;
 right: 10px;
 z-index: 9999;
 opacity:0.7;
+}
+
+.img-responsive {
+	width: 295px;
+	height: 225px;
+}
+
+#portfolio-sec a {
+	color: white;
+	text-decoration: none;
 }
